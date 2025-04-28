@@ -1,2 +1,38 @@
 # developer-challenge-submission
 HMCTS Developer Challenge Submission
+
+
+# Task Manager Frontend
+
+A React-based task management application that uses Express js
+
+## Prerequisites
+
+Make sure you have the following installed:
+- **Node.js** (v18 or higher)
+- **npm** (Node Package Manager)
+
+## Getting Started
+
+Follow the same steps to run the frontend and backend code
+
+1. Clone the repository:
+   git clone <repository_url>
+   cd backend
+
+2. Installing dependencies
+   npm install
+
+3. Running the development server: The frontend application is available at "http:localhost:5173", the backend is available at localhost:3000.
+   npm run dev
+
+Features
+CRUD Operations: Create, read, update, and delete tasks.
+Task Status Management: Manage task statuses (Pending, In Progress, Completed).
+Due Date Tracking: Keep track of task due dates.
+Task Detail View: View a singular task.
+Form Validation: Ensures that form inputs are correctly filled out.
+Error Handling: Displays error messages when necessary.
+
+   
+   

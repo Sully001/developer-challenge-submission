@@ -20,11 +20,11 @@ Follow the same steps to run the frontend and backend code
    git clone <repository_url>
    cd backend
 
-2. Installing dependencies
-   npm install
+2. Installing dependencies:
+    npm install
 
-3. Running the development server: The frontend application is available at "http:localhost:5173", the backend is available at localhost:3000.
-   npm run dev
+3. Running the development server: The frontend application is available at "http:localhost:5173", the backend is available at localhost:3000: 
+    npm run dev
 
 ## Before running the backend ensure you define a .env file in the root of your app with the following fields
 

@@ -1,0 +1,215 @@
+/* Apply box-sizing to everything */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e9f2 100%);
+  min-height: 100vh;
+}
+
+textarea {
+  font-family: inherit;
+}
+
+.project-title {
+  margin: 20px;
+  text-align: center;
+}
+
+.no-tasks-container {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.all-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 50px;
+  width: 80%;
+  margin: 90px auto;
+  padding: 0 20px;
+}
+
+.single-card {
+  width: 250px;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.single-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+  background-color: #f8f9fa;
+}
+
+.status-date-container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.task-status {
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.single-task {
+  width: min-content;
+}
+
+.completed {
+  background-color: rgb(119, 225, 119);
+}
+.in_progress {
+  background-color: rgb(233, 233, 101);
+}
+.pending {
+  background-color: rgb(250, 141, 141);
+}
+
+.task-status,
+.task-date {
+  margin: 0;
+  font-size: small;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Styles for add task dialog */
+.add-task-button-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Styles for task form */
+.create-task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.create-task-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.create-task-form input,
+.create-task-form textarea,
+.create-task-form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.create-task-form input:focus,
+.create-task-form textarea:focus,
+.create-task-form select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Reusable button styles */
+.btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-blue {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-blue:hover {
+  background-color: #0056b3;
+}
+
+.btn-red {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-red:hover {
+  background-color: #a71d2a;
+}
+
+/* Styles for single task container */
+.single-task-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.single-task-container .task-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.single-task-container .task-description,
+.single-task-container .task-status,
+.single-task-container .task-due-date {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.error-message {
+  color: #dc3545;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.loading-message {
+  color: #007bff;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+/* Styles for form error handling */
+
+.form-errors {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: rgba(220, 53, 69, 0.1);
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 14px;
+  margin: 4px 0;
+}

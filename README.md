@@ -26,13 +26,24 @@ Follow the same steps to run the frontend and backend code
 3. Running the development server: The frontend application is available at "http:localhost:5173", the backend is available at localhost:3000.
    npm run dev
 
+## Before running the backend ensure you define a .env file in the root of your app with the following fields
+
+| Field         | Description                                    | Example           |
+|---------------|------------------------------------------------|-------------------|
+| `USER`        | PostgreSQL database username                   | `postgres`        |
+| `HOST`        | Database host address                          | `localhost`       |
+| `DATABASE`    | Name of your database                          | `postgres`        |
+| `PASSWORD`    | Database user password                         | `yourpassword`    |
+| `DATABASE_PORT` | Port number for database connection            | `5432`          |
+| `APP_PORT`    | Port number for the application server         | `3000`            |
+
 Features
-CRUD Operations: Create, read, update, and delete tasks.
-Task Status Management: Manage task statuses (Pending, In Progress, Completed).
-Due Date Tracking: Keep track of task due dates.
-Task Detail View: View a singular task.
-Form Validation: Ensures that form inputs are correctly filled out.
-Error Handling: Displays error messages when necessary.
+-CRUD Operations: Create, read, update, and delete tasks.
+-Task Status Management: Manage task statuses (Pending, In Progress, Completed).
+-Due Date Tracking: Keep track of task due dates.
+-Task Detail View: View a singular task.
+-Form Validation: Ensures that form inputs are correctly filled out.
+-Error Handling: Displays error messages when necessary.
 
    
    

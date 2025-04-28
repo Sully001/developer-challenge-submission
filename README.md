@@ -37,13 +37,7 @@ Follow the same steps to run the frontend and backend code
 | `DATABASE_PORT` | Port number for database connection            | `5432`          |
 | `APP_PORT`    | Port number for the application server         | `3000`            |
 
-Features
--CRUD Operations: Create, read, update, and delete tasks.
--Task Status Management: Manage task statuses (Pending, In Progress, Completed).
--Due Date Tracking: Keep track of task due dates.
--Task Detail View: View a singular task.
--Form Validation: Ensures that form inputs are correctly filled out.
--Error Handling: Displays error messages when necessary.
+
 
    
    

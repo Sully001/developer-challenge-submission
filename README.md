@@ -23,6 +23,7 @@ Follow the same steps to run the frontend and backend code
 
 3 Installing dependencies:
     npm install
+    
 
 4. Running the development server: The frontend application is available at "http:localhost:5173", the backend is available at localhost:3000: 
     npm run dev
